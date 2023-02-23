@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br>
+<div class="jumbotron text-center">
+    <h1 class="display-3">Thank You!</h1>
+    <p class="lead"><strong>We have recieved your Email.</strong> We will get back to you at the earliest.</p>
+    <hr>
+    <p>
+        Having trouble? <a href="{{url_for('view.contact')}}">Contact us</a>
+    </p>
+    <p class="lead">
+        <a class="btn btn-primary btn-sm" href="{{url_for('view.hello')}}" role="button">Continue to homepage</a>
+    </p>
+</div>
+<br><br><br>
+{% endblock %}

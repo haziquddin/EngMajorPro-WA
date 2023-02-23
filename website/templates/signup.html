@@ -1,0 +1,66 @@
+<!-- templates/signup.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <div class="breadcrumbs">
+        <div class="page-header d-flex align-items-center" style="background-image: url('');">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Sign Up</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ol>
+                    <li><a href="{{url_for('view.hello')}}">Home</a></li>
+                    <li>New User</li>
+                </ol>
+            </div>
+        </nav>
+    </div><!-- End Breadcrumbs -->
+    <div class="column is-4 is-offset-4" style="background-color: #00d1b2;">
+        <img src="../static/img/noun-login.png" class="imgcen" alt="" data-aos="zoom-out" data-aos-delay="100">
+        <br>
+        <div class="box">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="notification is-danger">
+                {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.
+            </div>
+            {% endif %}
+            {% endwith %}
+            <form method="POST" action="/signup">
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-large" type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+
+                <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <br><br>
+        </div>
+    </nav>
+</div>
+{% endblock %}

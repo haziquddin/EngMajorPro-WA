@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('');">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Blog</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Blog</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4 posts-list">
+
+        <div class="col-xl-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="../static/img/blog/blog-1.jpg" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Melanoma</p>
+
+            <h2 class="title">
+              <a href="{{url_for('view.blog_melanoma')}}">Basic information about Melanoma.</a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <!-- <img src="../static/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+              <div class="post-meta">
+                <p class="post-author-list">Dr. ABC</p>
+                <p class="post-date">
+                  <time datetime="2023-01-01">__</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div><!-- End post list item -->
+
+        <div class="col-xl-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="../static/img/blog/blog-2.jpg" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Eczema</p>
+
+            <h2 class="title">
+              <a href="{{url_for('view.blog_Eczema')}}">Basic information about Eczema</a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <!-- <img src="../static/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+              <div class="post-meta">
+                <p class="post-author-list">Dr. ABC</p>
+                <p class="post-date">
+                  <time datetime="2023-01-01">__</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div><!-- End post list item -->
+
+        <div class="col-xl-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="../static/img/blog/blog-3.webp" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Psoriasis</p>
+
+            <h2 class="title">
+              <a href="{{url_for('view.blog_Psoriasis')}}">Basic information about Psoriasis</a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <!-- <img src="../static/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+              <div class="post-meta">
+                <p class="post-author-list">Dr. ABC</p>
+                <p class="post-date">
+                  <time datetime="2023-01-01">__</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div><!-- End post list item -->
+
+        <div class="col-xl-4 col-md-6">
+          <article>
+
+            <div class="post-img">
+              <img src="../static/img/blog/blog-4.jpg" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Dermatitis</p>
+
+            <h2 class="title">
+              <a href="{{url_for('view.blog_dermatitis')}}">Basic information about Dermatitis</a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <!-- <img src="../static/img/blog/blog-author-4.jpg" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+              <div class="post-meta">
+                <p class="post-author-list">Dr. ABC</p>
+                <p class="post-date">
+                  <time datetime="2023-01-01">__</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div><!-- End post list item -->
+
+
+
+      </div>
+  </section><!-- End Blog Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}

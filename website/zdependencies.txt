@@ -1,0 +1,23 @@
+numpy
+flask
+tensorflow
+keras
+flask login
+sql alcahmey
+pillow 
+pip install --upgrade tensorflow keras numpy pillow
+
+--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--
+
+O dynamic data
+O Block
+O routing to diff app
+X auth
+
+
+1
+python -m venv cage
+cage\Scripts\activate
+pip install flask flask-sqlalchemy flask-login
+pip install numpy tensorflow keras keras_preprocessing
+flask --app main.py --debug run
