@@ -1,0 +1,9 @@
+numpy
+flask
+tensorflow
+keras
+pillow 
+flask 
+flask-sqlalchemy 
+flask-login
+keras_preprocessing
